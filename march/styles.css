@@ -1,0 +1,72 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: aliceblue;
+    color: #094809;
+
+}
+
+h1 {
+    font-family: 'Flower3';
+    font-size: 65px;
+    margin: 10px 0 10px;
+    color: rgb(9, 72, 9);
+}
+
+.header-image {
+    width:100%;
+    margin: 0;
+    padding: 0;
+}
+
+.header-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0;
+}
+
+.calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 1px;
+    width: 100%;
+    max-width: 900px;
+    border: 2px solid #094809;
+}
+
+.day-name, 
+.day-placeholder {
+    font-family: 'Flower3';
+    text-align: center;
+    font-size: 65px;
+    font-weight: bold;
+    border: 1px solid #094809;
+    height: 75px;
+
+}
+
+.day {
+    font-family: 'Billstone Signature PersonalUse';
+    font-size: 35px;
+    border: 1px solid #094809;
+    text-align: center;
+    font-weight: bold;
+    height: 75px;
+
+}
+
+@font-face {
+    font-family: 'Flower3';
+    src: url('font/flower3.TTF') format('truetype');
+}
+
+
