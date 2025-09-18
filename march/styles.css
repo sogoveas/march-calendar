@@ -4,6 +4,10 @@ html, body {
     box-sizing: border-box;
 }
 
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
 body {
     font-weight: bold;
     display: flex;
@@ -11,18 +15,17 @@ body {
     align-items: center;
     background-color: rgb(219, 235, 241);
     color: #094809;
-
 }
 
 h1 {
-    font-family: 'Flower3';
+    font-family: 'Flower3', cursive, sans-serif;
     font-size: 75px;
     margin: 10px 0 10px;
     color: rgb(9, 72, 9);
 }
 
 .header-image {
-    width:100%;
+    width: 100%;
     margin: 0;
     padding: 0;
 }
@@ -35,34 +38,35 @@ h1 {
 }
 
 .calendar {
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    gap: 1px;
+    display: flex;
+    flex-wrap: wrap;
     width: 100%;
     max-width: 900px;
     border: 2px solid #094809;
 }
 
-.day-name, 
-.day-placeholder {
-    font-family: 'Flower3';
-    text-align: center;
-    font-size: 65px;
-    font-weight: bold;
+.day-name,
+.day-placeholder,
+.day {
+    font-family: 'Flower3', cursive, sans-serif;
+    display: flex;
+    justify-content: center;
     align-items: center;
     border: 1px solid #094809;
     height: 70px;
-
+    box-sizing: border-box;
+    flex: 0 0 calc(100% / 7);
 }
 
 .day {
-    font-family: 'Billstone Signature PersonalUse';
+    font-family: 'Billstone Signature PersonalUse', cursive, sans-serif;
     font-size: 35px;
-    border: 1px solid #094809;
-    text-align: center;
-    align-items: center;
+}
+
+.day-name,
+.day-placeholder {
+    font-size: 65px;
     font-weight: bold;
-    height: 70px;
 }
 
 @font-face {
@@ -70,4 +74,7 @@ h1 {
     src: url('font/flower3.TTF') format('truetype');
 }
 
-
+@font-face {
+    font-family: 'Billstone Signature PersonalUse';
+    src: url('font/BillstoneSignaturePersonalUse.TTF') format('truetype');
+}
