@@ -71,10 +71,10 @@ h1 {
 
 @font-face {
     font-family: 'Flower3';
-    src: url('font/flower3.TTF') format('truetype');
+    src: url('flower3.TTF') format('truetype');
 }
 
 @font-face {
     font-family: 'Billstone Signature PersonalUse';
-    src: url('font/BillstoneSignaturePersonalUse.TTF') format('truetype');
+    src: url('BillstoneSignaturePersonalUse.TTF') format('truetype');
 }
